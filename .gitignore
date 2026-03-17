@@ -1,0 +1,30 @@
+# Node / Next
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Database / Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local setup backups
+.setup-backups/
+
+# Claude
+.claude-cache/
