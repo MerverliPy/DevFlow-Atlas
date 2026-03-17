@@ -1,25 +1,27 @@
 # COMPACT_CONTEXT
 
 ## Current phase
-Phase 0 — Skeleton repo
+Phase 1 — Architecture and product decisions
 
 ## Current objective
-Create the minimal repo operating files and strict execution controls required for safe, deterministic, phase-gated implementation.
+Lock all product and architecture decisions required before any runtime code is written.
+
+## Completed slices
+- 1A: `docs/product/PRD-v1.md` and `docs/architecture/adr-001-product-scope.md` created
+- 1B: `docs/architecture/adr-002-review-heuristics.md` created — due, upcoming, overdue, neglected, stale locked
+- 1C: context files updated, Phase 1 closed out
 
 ## Active constraints
-- Keep the artifact pack minimal
-- Do not create product code yet
-- Do not add extra docs beyond the scaffold
-- Keep phase advancement manual
+- Do not begin Phase 2 without explicit user approval and PHASE_STATE.json advancement to phase 2
 - Keep stack choice fixed
 - Keep marketing copy out of required engineering reads
 
 ## Immediate work
-- Create or verify the control files
-- Verify the repo is ready for Phase 1
-- Do not begin architecture docs or runtime code yet
+- Phase 1 is complete. Phase 2 is not unlocked yet.
+- To unlock Phase 2: user must explicitly run `./scripts/advance-phase.sh 2` and grant approval before any Phase 2 work begins
 
-## Next files expected after manual phase advance
-- docs/product/PRD-v1.md
-- docs/architecture/adr-001-product-scope.md
-- docs/architecture/adr-002-review-heuristics.md
+## Key decisions locked in Phase 1
+- Product identity: manual-first operating graph
+- Review heuristics: due (today), upcoming (next 7 days), overdue (past, incomplete), neglected (no activity 14+ days), stale (no content at all)
+- Today view: overdue + due today + upcoming reminders
+- Weekly review: overdue + neglected nodes + stale nodes
